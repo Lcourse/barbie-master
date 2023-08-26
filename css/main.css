@@ -75,3 +75,19 @@ main {
     opacity: 1;
     transform: translateY(0px);
 }
+
+.actor_name {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+
+    width: 250px;
+    height: auto;
+    padding: 8px 0;
+    border-radius: 45px;
+
+    background: transparent;
+    border: 1px solid var(--silver);
+    box-shadow: var(--shadow-name);
+
+}
