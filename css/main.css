@@ -90,4 +90,23 @@ main {
     border: 1px solid var(--silver);
     box-shadow: var(--shadow-name);
 
+    transition: all 0.4s;
+}
+
+.actor_name:hover {
+    background: var(--pink);
+    transform: translateY(-10px);
+
+    cursor: pointer;
+
+}
+
+.actor_name.ryan {
+    margin-top: 9vh;
+    margin-right: 14vw;
+}
+
+.actor_name.margot {
+    margin-top: 22vh;
+    margin-right: 11vw;
 }
