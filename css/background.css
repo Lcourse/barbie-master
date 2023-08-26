@@ -1,6 +1,28 @@
 .background {
     z-index: -1;
     position: absolute;
-    top: 0;
+    inset: 0;
 
+    display: flex;
+}
+
+.background::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    background: var(--shadow-car);
+
+}
+
+.cloud {
+    display: none;
+    position: absolute;
+}
+
+.car {
+    width: 100%;
+    height: auto;
+
+    margin-top: auto;
 }
