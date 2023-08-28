@@ -18,29 +18,44 @@
 .cloud {
     position: absolute;
     z-index: -2;
+    left: -258px;
+
     width: auto;
     height: 11vh;
+
+   /* animation: moveCloud 10s linear infinite; */
 }
 
 .cloud:nth-child(1) {
-    top: 70px;
-    left: 470px;
+    top: 70px;  
+    
 }
+
 .cloud:nth-child(2) {
     top: 190px;
-    left: 450px;
+    /* left: 450px; */
 }
 .cloud:nth-child(3) {
     top: 420px;
-    left: 800px;
+    /* left: 800px; */
 }
 .cloud:nth-child(4) {
     top: 310px;
-    left: 650px;
+    /* left: 650px; */
 }
 .cloud:nth-child(5) {
     top: 520px;
-    left: 450px;
+    /* left: 450px; */
+}
+
+@keyframes moveCloud {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 258px));
+    }
 }
 
 .car {
