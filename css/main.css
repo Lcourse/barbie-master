@@ -1,112 +1,111 @@
 main {
-    flex: 1;
+  flex: 1;
 
-    display: flex;
-    align-items: flex-start;
-    padding: 0 100px;
+  display: flex;
+  align-items: flex-start;
+  padding: 0 100px;
 }
 
 .trailer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2px;
 
-    margin-top: 100px;
-    margin-right: auto;
+  margin-top: 100px;
+  margin-right: auto;
 
-    position: relative;
+  position: relative;
 }
 
 .trailer::before {
-    content: '';
+  content: "";
 
-    position: absolute;
-    bottom: 0;
-    left: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 6px;
 
-    filter: blur(10px);
-    background: var(--black);
-    width: 308px;
-    height: 162px;
+  filter: blur(10px);
+  background: var(--black);
+  width: 308px;
+  height: 162px;
 }
 
 .trailer strong {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .trailer picture {
-    width: 322px;
-    height: 195px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 6px;
+  width: 322px;
+  height: 195px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 6px;
 
-    position: relative;
+  position: relative;
 }
 
 .trailer picture img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .trailer picture:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .trailer picture a {
-    position: absolute;
-    inset: 0;
+  position: absolute;
+  inset: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    opacity: 0;
-    transform: translateY(50px);
+  opacity: 0;
+  transform: translateY(50px);
 
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .trailer picture:hover a {
-    cursor: pointer;
-    opacity: 1;
-    transform: translateY(0px);
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .actor_name {
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
 
-    width: 250px;
-    height: auto;
-    padding: 8px 0;
-    border-radius: 45px;
+  width: 250px;
+  height: auto;
+  padding: 8px 0;
+  border-radius: 45px;
 
-    background: transparent;
-    border: 1px solid var(--silver);
-    box-shadow: var(--shadow-name);
+  background: transparent;
+  border: 1px solid var(--silver);
+  box-shadow: var(--shadow-name);
 
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .actor_name:hover {
-    background: var(--pink);
-    transform: translateY(-10px);
+  background: var(--pink);
+  transform: translateY(-10px);
 
-    cursor: pointer;
-
+  cursor: pointer;
 }
 
 .actor_name.ryan {
-    margin-top: 9vh;
-    margin-right: 14vw;
+  margin-top: 9vh;
+  margin-right: 14vw;
 }
 
 .actor_name.margot {
-    margin-top: 22vh;
-    margin-right: 11vw;
+  margin-top: 22vh;
+  margin-right: 11vw;
 }
