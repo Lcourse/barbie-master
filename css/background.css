@@ -23,17 +23,19 @@
     width: auto;
     height: 11vh;
 
-   /* animation: moveCloud 10s linear infinite; */
+    animation: moveCloud 10s linear infinite; 
 }
 
 .cloud:nth-child(1) {
     top: 70px;  
+    animation-delay: 4s;
     
 }
 
 .cloud:nth-child(2) {
     top: 190px;
     /* left: 450px; */
+    animation-delay: 8s;
 }
 .cloud:nth-child(3) {
     top: 420px;
@@ -42,10 +44,12 @@
 .cloud:nth-child(4) {
     top: 310px;
     /* left: 650px; */
+    animation-delay: 6s;
 }
 .cloud:nth-child(5) {
     top: 520px;
     /* left: 450px; */
+    animation-delay: 2.5s;
 }
 
 @keyframes moveCloud {
